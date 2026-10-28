@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Flappy Hillstars Privacy Policy</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gluten:wght@700;800&family=Nunito:wght@400;600;700&display=swap">
+<style>
+/* Layout: a dusk-sky header band like the game's title screen, then one readable column of policy text. */
+:root{
+  --sky1:#2a1f4e; --sky2:#6b3f6e; --gold:#ffc94a; --pen:#2b1d12;
+  --bg:#fbf7f1; --fg:#2a2433; --muted:#6c6475; --line:#e6dfd5; --chip:#efe8dc; --chip-on:#2a1f4e; --chip-on-fg:#fff3d0; --link:#7a3fa0;
+  --disp:"Gluten","Comic Sans MS","Trebuchet MS",cursive;
+  --body:"Nunito",system-ui,-apple-system,"Segoe UI","Hiragino Sans","Noto Sans JP","PingFang SC","Microsoft YaHei",sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#17131f; --fg:#ece6f2; --muted:#a79fb2; --line:#2e2738; --chip:#251f30; --chip-on:#ffc94a; --chip-on-fg:#2b1d12; --link:#e0a8ff; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#17131f; --fg:#ece6f2; --muted:#a79fb2; --line:#2e2738; --chip:#251f30; --chip-on:#ffc94a; --chip-on-fg:#2b1d12; --link:#e0a8ff; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.65}
+.band{background:linear-gradient(180deg,var(--sky1),var(--sky2));padding-block:40px 34px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));text-align:center;position:relative;overflow:hidden}
+.band::before{content:"";position:absolute;inset:0;background-image:radial-gradient(1.5px 1.5px at 12% 30%,#fff8 50%,transparent 51%),radial-gradient(1px 1px at 30% 70%,#fff7 50%,transparent 51%),radial-gradient(1.5px 1.5px at 55% 22%,#fff9 50%,transparent 51%),radial-gradient(1px 1px at 78% 60%,#fff6 50%,transparent 51%),radial-gradient(1.5px 1.5px at 90% 25%,#fff8 50%,transparent 51%);pointer-events:none}
+.logo{font-family:var(--disp);font-weight:800;font-size:clamp(34px,9vw,52px);line-height:1.05;color:var(--gold);-webkit-text-stroke:2px var(--pen);paint-order:stroke fill;text-shadow:0 4px 0 var(--pen);margin:0;transform:rotate(-2deg);position:relative}
+.studio{margin:14px 0 0;color:#f4e6d0;letter-spacing:.28em;font-size:12px;font-weight:700;text-transform:uppercase;position:relative}
+main{max-width:720px;margin:0 auto;padding-block:28px 56px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.langs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:28px}
+.langs button{font:inherit;font-size:14px;font-weight:700;border:0;border-radius:999px;padding:6px 14px;background:var(--chip);color:var(--fg);cursor:pointer}
+.langs button[aria-pressed="true"]{background:var(--chip-on);color:var(--chip-on-fg)}
+.langs button:focus-visible{outline:3px solid var(--link);outline-offset:2px}
+h1{font-size:clamp(24px,6vw,32px);line-height:1.2;margin:0 0 6px;text-wrap:balance}
+.date{color:var(--muted);font-size:14px;margin:0 0 24px}
+h2{font-size:18px;margin:28px 0 6px;text-wrap:balance}
+p{margin:0 0 10px;max-width:65ch}
+.mail{font-weight:700;color:var(--link);user-select:all;word-break:break-all}
+footer{border-top:1px solid var(--line);margin-top:40px;padding-top:16px;color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+
+<header class="band">
+  <p class="logo">Flappy<br>Hillstars</p>
+  <p class="studio">Simon Videogames</p>
+</header>
+
+<main>
+  <nav class="langs" id="langs" aria-label="Language"></nav>
+  <article id="doc" lang="en"></article>
+  <footer>© Simon Videogames 2026. All rights reserved.</footer>
+</main>
+
+<script>
+const EMAIL = "worldcitizen.2k@gmail.com";
+const DATE = {en:"Effective date: October 28, 2026",fr:"Date d'entrée en vigueur : 28 octobre 2026",es:"Fecha de entrada en vigor: 28 de octubre de 2026",it:"Data di entrata in vigore: 28 ottobre 2026",pt:"Data de vigência: 28 de outubro de 2026",ja:"施行日:2026年10月28日",zh:"生效日期:2026年10月28日"};
+const NAMES = {en:"English",fr:"Français",es:"Español",it:"Italiano",pt:"Português",ja:"日本語",zh:"中文"};
+const DOC = {
+en:{t:"Privacy Policy",s:[
+ ["Who we are","Flappy Hillstars is a mobile game for Android developed by Simon Videogames, an independent developer. This policy explains how the game handles your data."],
+ ["Data we collect","None. The game works offline. It does not collect, store, transmit or share any personal data. It contains no ads, no analytics and no tracking, and it does not ask for your name, email, location or contacts."],
+ ["Data stored on your device","Your scores, settings, difficulty level and unlocked items are saved only on your device. We cannot access them. Uninstalling the game or clearing its data deletes them."],
+ ["In-app purchases","Purchases are processed entirely by Google Play. We never receive your payment details. Google only tells the game which items your account owns, so it can unlock them. Google's privacy policy (policies.google.com/privacy) applies to these transactions."],
+ ["Sharing","The Share button opens your phone's own sharing menu with a link to the game. The game does not see who you share it with."],
+ ["Children","The game does not knowingly collect any data from anyone, including children under 13."],
+ ["Changes","If this policy changes, the new version will be published on this page with a new effective date."],
+ ["Contact","For any question about this policy, write to:"]]},
+fr:{t:"Politique de confidentialité",s:[
+ ["Qui sommes-nous","Flappy Hillstars est un jeu mobile pour Android développé par Simon Videogames, développeur indépendant. Cette politique explique comment le jeu traite vos données."],
+ ["Données collectées","Aucune. Le jeu fonctionne hors ligne. Il ne collecte, ne stocke, ne transmet et ne partage aucune donnée personnelle. Il ne contient ni publicité, ni outil de mesure d'audience, ni suivi, et ne demande ni votre nom, ni votre e-mail, ni votre position, ni vos contacts."],
+ ["Données stockées sur votre appareil","Vos scores, réglages, niveau de difficulté et objets débloqués sont enregistrés uniquement sur votre appareil. Nous n'y avons pas accès. Désinstaller le jeu ou effacer ses données les supprime."],
+ ["Achats intégrés","Les achats sont entièrement traités par Google Play. Nous ne recevons jamais vos informations de paiement. Google indique seulement au jeu les objets que possède votre compte, afin de les débloquer. La politique de confidentialité de Google (policies.google.com/privacy) s'applique à ces transactions."],
+ ["Partage","Le bouton Partager ouvre le menu de partage de votre téléphone avec un lien vers le jeu. Le jeu ne voit pas avec qui vous le partagez."],
+ ["Enfants","Le jeu ne collecte sciemment aucune donnée, y compris auprès des enfants de moins de 13 ans."],
+ ["Modifications","Si cette politique change, la nouvelle version sera publiée sur cette page avec une nouvelle date d'entrée en vigueur."],
+ ["Contact","Pour toute question sur cette politique, écrivez à :"]]},
+es:{t:"Política de privacidad",s:[
+ ["Quiénes somos","Flappy Hillstars es un juego móvil para Android desarrollado por Simon Videogames, desarrollador independiente. Esta política explica cómo trata el juego tus datos."],
+ ["Datos que recopilamos","Ninguno. El juego funciona sin conexión. No recopila, almacena, transmite ni comparte datos personales. No contiene anuncios, análisis ni seguimiento, y no pide tu nombre, correo, ubicación ni contactos."],
+ ["Datos guardados en tu dispositivo","Tus puntuaciones, ajustes, nivel de dificultad y objetos desbloqueados se guardan solo en tu dispositivo. No tenemos acceso a ellos. Desinstalar el juego o borrar sus datos los elimina."],
+ ["Compras dentro de la app","Las compras las procesa íntegramente Google Play. Nunca recibimos tus datos de pago. Google solo indica al juego qué artículos posee tu cuenta para desbloquearlos. La política de privacidad de Google (policies.google.com/privacy) se aplica a estas transacciones."],
+ ["Compartir","El botón Compartir abre el menú para compartir de tu teléfono con un enlace al juego. El juego no ve con quién lo compartes."],
+ ["Menores","El juego no recopila conscientemente datos de nadie, incluidos los menores de 13 años."],
+ ["Cambios","Si esta política cambia, la nueva versión se publicará en esta página con una nueva fecha de entrada en vigor."],
+ ["Contacto","Para cualquier pregunta sobre esta política, escribe a:"]]},
+it:{t:"Informativa sulla privacy",s:[
+ ["Chi siamo","Flappy Hillstars è un gioco mobile per Android sviluppato da Simon Videogames, sviluppatore indipendente. Questa informativa spiega come il gioco tratta i tuoi dati."],
+ ["Dati raccolti","Nessuno. Il gioco funziona offline. Non raccoglie, conserva, trasmette né condivide dati personali. Non contiene pubblicità, strumenti di analisi né tracciamento, e non chiede nome, e-mail, posizione o contatti."],
+ ["Dati salvati sul dispositivo","Punteggi, impostazioni, livello di difficoltà e oggetti sbloccati sono salvati solo sul tuo dispositivo. Non possiamo accedervi. Disinstallare il gioco o cancellarne i dati li elimina."],
+ ["Acquisti in-app","Gli acquisti sono gestiti interamente da Google Play. Non riceviamo mai i tuoi dati di pagamento. Google comunica al gioco solo quali oggetti possiede il tuo account, per sbloccarli. A queste transazioni si applica l'informativa sulla privacy di Google (policies.google.com/privacy)."],
+ ["Condivisione","Il pulsante Condividi apre il menu di condivisione del telefono con un link al gioco. Il gioco non vede con chi lo condividi."],
+ ["Minori","Il gioco non raccoglie consapevolmente dati da nessuno, compresi i minori di 13 anni."],
+ ["Modifiche","Se questa informativa cambia, la nuova versione sarà pubblicata su questa pagina con una nuova data di entrata in vigore."],
+ ["Contatti","Per qualsiasi domanda su questa informativa, scrivi a:"]]},
+pt:{t:"Política de privacidade",s:[
+ ["Quem somos","Flappy Hillstars é um jogo para Android desenvolvido pela Simon Videogames, desenvolvedor independente. Esta política explica como o jogo trata seus dados."],
+ ["Dados coletados","Nenhum. O jogo funciona offline. Ele não coleta, armazena, transmite nem compartilha dados pessoais. Não contém anúncios, ferramentas de análise nem rastreamento, e não pede seu nome, e-mail, localização ou contatos."],
+ ["Dados salvos no seu dispositivo","Suas pontuações, configurações, nível de dificuldade e itens desbloqueados ficam salvos apenas no seu dispositivo. Não temos acesso a eles. Desinstalar o jogo ou apagar os dados dele os exclui."],
+ ["Compras no app","As compras são processadas inteiramente pelo Google Play. Nunca recebemos seus dados de pagamento. O Google apenas informa ao jogo quais itens sua conta possui, para desbloqueá-los. A política de privacidade do Google (policies.google.com/privacy) se aplica a essas transações."],
+ ["Compartilhamento","O botão Compartilhar abre o menu de compartilhamento do seu telefone com um link para o jogo. O jogo não vê com quem você compartilha."],
+ ["Crianças","O jogo não coleta conscientemente dados de ninguém, incluindo crianças menores de 13 anos."],
+ ["Alterações","Se esta política mudar, a nova versão será publicada nesta página com uma nova data de vigência."],
+ ["Contato","Para qualquer dúvida sobre esta política, escreva para:"]]},
+ja:{t:"プライバシーポリシー",s:[
+ ["運営者について","Flappy Hillstars は、個人開発者 Simon Videogames が開発した Android 向けモバイルゲームです。本ポリシーでは、ゲームにおけるデータの取り扱いについて説明します。"],
+ ["収集するデータ","ありません。本ゲームはオフラインで動作し、個人データを収集・保存・送信・共有することはありません。広告、解析ツール、トラッキングは含まれず、名前、メールアドレス、位置情報、連絡先を求めることもありません。"],
+ ["端末に保存されるデータ","スコア、設定、難易度、解放したアイテムはお使いの端末にのみ保存されます。私たちがそれらにアクセスすることはできません。ゲームをアンインストールするか、データを消去すると削除されます。"],
+ ["アプリ内購入","購入はすべて Google Play によって処理されます。私たちがお支払い情報を受け取ることはありません。Google はアイテムを解放するため、アカウントが所有するアイテムのみをゲームに伝えます。これらの取引には Google のプライバシーポリシー(policies.google.com/privacy)が適用されます。"],
+ ["共有","共有ボタンを押すと、ゲームへのリンクを含む端末の共有メニューが開きます。誰と共有したかをゲームが知ることはありません。"],
+ ["お子様について","本ゲームは、13歳未満のお子様を含め、いかなる方からも意図的にデータを収集しません。"],
+ ["変更について","本ポリシーを変更する場合は、新しい施行日とともにこのページで公開します。"],
+ ["お問い合わせ","本ポリシーに関するご質問は、以下までご連絡ください:"]]},
+zh:{t:"隐私政策",s:[
+ ["关于我们","Flappy Hillstars 是由独立开发者 Simon Videogames 开发的 Android 手机游戏。本政策说明游戏如何处理你的数据。"],
+ ["我们收集的数据","无。本游戏可离线运行,不会收集、存储、传输或分享任何个人数据。游戏不含广告、统计分析或跟踪,也不会索取你的姓名、电子邮件、位置或联系人。"],
+ ["保存在设备上的数据","你的分数、设置、难度和已解锁内容仅保存在你的设备上,我们无法访问。卸载游戏或清除其数据后将被删除。"],
+ ["应用内购买","购买完全由 Google Play 处理,我们不会收到你的支付信息。Google 只会告知游戏你的账户拥有哪些内容,以便解锁。这些交易适用 Google 隐私政策(policies.google.com/privacy)。"],
+ ["分享","点击分享按钮会打开手机自带的分享菜单,并附上游戏链接。游戏无法得知你分享给了谁。"],
+ ["儿童","本游戏不会有意收集任何人的数据,包括 13 岁以下的儿童。"],
+ ["政策变更","如本政策有所变更,新版本将连同新的生效日期发布在本页面。"],
+ ["联系我们","如对本政策有任何疑问,请发送邮件至:"]]}
+};
+const order=["en","fr","es","it","pt","ja","zh"];
+const nav=document.getElementById("langs"), doc=document.getElementById("doc");
+function esc(s){return s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));}
+function show(l){
+  const d=DOC[l]; doc.lang=l; document.documentElement.lang=l;
+  let h=`<h1>${esc(d.t)}</h1><p class="date">${esc(DATE[l])}</p>`;
+  d.s.forEach(([k,v],i)=>{h+=`<h2>${esc(k)}</h2><p>${esc(v)}</p>`; if(i===d.s.length-1) h+=`<p><span class="mail">${esc(EMAIL)}</span></p>`;});
+  doc.innerHTML=h;
+  nav.querySelectorAll("button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.l===l?"true":"false"));
+}
+order.forEach(l=>{const b=document.createElement("button");b.type="button";b.dataset.l=l;b.textContent=NAMES[l];b.addEventListener("click",()=>{show(l);try{history.replaceState(null,"","#"+l)}catch(e){location.hash=l}});nav.appendChild(b);});
+function pick(){const h=(location.hash||"").slice(1);if(DOC[h])return h;const n=((navigator.language||"en").slice(0,2)).toLowerCase();return DOC[n]?n:"en";}
+show(pick());
+window.addEventListener("hashchange",()=>show(pick()));
+</script>
+</body>
+</html>
